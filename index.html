@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>Qur'an JSON Web</title>
         <meta charset="utf-8" />
@@ -36,7 +36,19 @@
     </head>
     <body style="padding: 0; margin: 0; background: #fdfdef;">
         <div id="root"></div>
-        <script async src="./service-worker-registration.js"></script>
-        <script async src="./js/client.js"></script>
+        <script type="text/javascript">
+            // [WORKAROUND]
+            (function(){
+                if ('sessionStorage' in window) {
+                    var redirect = sessionStorage.redirect;
+                    delete sessionStorage.redirect;
+                    if (redirect && redirect !== location.href) {
+                        history.replaceState(null, null, redirect);
+                    }
+                }
+            })();
+        </script>
+        <script type="text/javascript" async src="./service-worker-registration.js"></script>
+        <script type="text/javascript" async src="./js/client.js"></script>
     </body>
 </html>

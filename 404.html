@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        // [WORKAROUND]
+        (function(){
+            if ('sessionStorage' in window) {
+                sessionStorage.redirect = location.href;
+            }
+        })();
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/quranjson-web'"></meta>
+</head>
+<body></body>
+</html>
