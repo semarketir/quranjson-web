@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^\**\/*/, toolbox.fastest, {"cache":{"maxEntries":150,"name":"surah-pages"}});
+toolbox.router.get(/\**\/*/, toolbox.fastest, {"cache":{"maxEntries":150,"name":"surah-pages"}});
 toolbox.router.get(/^https:\/\/cdn\.rawgit\.com/, toolbox.fastest, {"cache":{"maxEntries":1001,"name":"json-files"}});
 toolbox.router.get(/^https:\/\/fonts\.gstatic\.com/, toolbox.cacheFirst, {});
 
