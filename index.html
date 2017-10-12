@@ -1,30 +1,42 @@
 <!doctype html>
 <html>
-<head>
-<title>Qur'an JSON Web</title>
-<meta charset="utf-8" />
-<link rel="manifest" href="manifest.json">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="msapplication-starturl" content="/">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800" rel="stylesheet" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<style type="text/css">
-    @font-face {
-        font-family: 'Saleem';
-        font-style: normal;
-        font-weight: normal;
-        src: local(Saleem), url(fonts/PDMS-Saleem.ttf) format('truetype');
-    }
-</style>
-</head>
-<body style="padding: 0; margin: 0; background: #fdfdef;">
-    <div id="root"></div>
-    <script src="service-worker-registration.js"></script>
-    <script src="js/client.js"></script>
-</body>
+    <head>
+        <title>Qur'an JSON Web</title>
+        <meta charset="utf-8" />
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
+
+        <link rel="manifest" href="manifest.json" />
+
+        <meta name="mobile-web-app-capable" content="yes" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Qur'an JSON Web" />
+        <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+
+        <meta name="msapplication-starturl" content="." />
+        <meta name="msapplicatoin-TileImage" content="images/icons/icon-144x144.png" />
+        <meta name="msapplicatoin-TileColor" content="#009000" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,shrink-to-fit=no" />
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800" rel="stylesheet" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <style type="text/css">
+            @font-face {
+                font-family: 'Saleem';
+                font-style: normal;
+                font-weight: normal;
+                src: local(Saleem), url(fonts/PDMS-Saleem.ttf) format('truetype');
+            }
+        </style>
+    </head>
+    <body style="padding: 0; margin: 0; background: #fdfdef;">
+        <div id="root"></div>
+        <script src="service-worker-registration.js"></script>
+        <script src="js/client.js"></script>
+    </body>
 </html>
