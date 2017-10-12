@@ -6,11 +6,7 @@
   "theme_color": "#009000",
   "background_color": "#fdfdef",
   "display": "standalone",
-  "scope": "/quranjson-web/*",
-  "start_url": ".",
-  "related_applications": [{
-    "platform": "web"
-  }],
+  "start_url": "./index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
